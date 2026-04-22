@@ -417,8 +417,11 @@ a {
   .menu {
     order: 3;
     width: 100%;
-    justify-content: space-between;
-    gap: 10px;
+    /* Switch menu to a vertical stack on small screens for clearer tap targets */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
   }
 
   .brand {
@@ -441,5 +444,10 @@ a {
 
   .section {
     padding: 3.7rem 0;
+  }
+
+  /* Make specialty images a bit taller on small screens for better visibility */
+  .specialty-image {
+    height: 200px;
   }
 }

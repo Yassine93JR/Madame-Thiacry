@@ -26,11 +26,11 @@
       </a>
 
       <nav class="menu">
-        <a href="#accueil">Accueil</a>
-        <a href="#apropos">À propos</a>
-        <a href="#specialites">Spécialités</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="#accueil" data-i18n="nav.home">Accueil</a>
+        <a href="#apropos" data-i18n="nav.about">À propos</a>
+        <a href="#specialites" data-i18n="nav.specialties">Spécialités</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
 
       <button id="langToggle" class="lang-toggle" type="button">
@@ -43,14 +43,14 @@
     <section class="hero" id="accueil">
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <p class="hero-kicker">Produits laitiers artisanaux en Gambie</p>
-        <h1>Le goût authentique du thiacry et du lait caillé fait maison</h1>
-        <p class="hero-text">
+        <p class="hero-kicker" data-i18n="hero.kicker">Produits laitiers artisanaux en Gambie</p>
+        <h1 data-i18n="hero.title">Le goût authentique du thiacry et du lait caillé fait maison</h1>
+        <p class="hero-text" data-i18n="hero.text">
           Le meilleur du thiacry et du lait caillé fait maison par des mains d’or de Mariama. À votre service !
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:+2202229244">Appeler maintenant</a>
-          <a class="btn btn-secondary" href="#services">Découvrir nos services</a>
+          <a class="btn btn-primary" href="tel:+2202229244" data-i18n="hero.call">Appeler maintenant</a>
+          <a class="btn btn-secondary" href="#services" data-i18n="hero.discover">Découvrir nos services</a>
         </div>
       </div>
     </section>
@@ -61,17 +61,17 @@
           <img src="2026-03-21.jpg" alt="Mariama Thiacry">
         </div>
         <div class="about-content">
-          <h2>À propos de Mariama Thiacry</h2>
-          <p>
+          <h2 data-i18n="about.title">À propos de Mariama Thiacry</h2>
+          <p data-i18n="about.p1">
             Mariama Thiacry est une entreprise familiale dédiée aux produits laitiers traditionnels, préparés chaque jour avec soin.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             Notre passion : offrir des recettes authentiques, un goût naturel et une qualité artisanale.
           </p>
           <ul class="about-points">
-            <li>Fabrication 100% maison</li>
-            <li>Recettes traditionnelles</li>
-            <li>Savoir-faire artisanal</li>
+            <li data-i18n="about.point1">Fabrication 100% maison</li>
+            <li data-i18n="about.point2">Recettes traditionnelles</li>
+            <li data-i18n="about.point3">Savoir-faire artisanal</li>
           </ul>
         </div>
       </div>
@@ -79,22 +79,28 @@
 
     <section class="specialties section" id="specialites">
       <div class="container">
-        <h2>Nos spécialités</h2>
+        <h2 data-i18n="specialties.title">Nos spécialités</h2>
         <div class="specialties-grid">
 
           <article class="specialty-card">
-            <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b" alt="">
-            <h3>Lait caillé traditionnel</h3>
+            <div class="specialty-image card">
+              <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b" alt="Lait caillé traditionnel">
+            </div>
+            <h3 data-i18n="specialties.milk.title">Lait caillé traditionnel</h3>
           </article>
 
           <article class="specialty-card">
-            <img src="telechargement.jpg" alt="">
-            <h3>Thiacry à la semoule</h3>
+            <div class="specialty-image card">
+              <img src="télécharger.jpg" alt="Thiacry à la semoule">
+            </div>
+            <h3 data-i18n="specialties.thiacry.title">Thiacry à la semoule</h3>
           </article>
 
           <article class="specialty-card">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff" alt="">
-            <h3>Douceurs maison</h3>
+            <div class="specialty-image card">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff" alt="Douceurs maison">
+            </div>
+            <h3 data-i18n="specialties.cakes.title">Douceurs maison</h3>
           </article>
 
         </div>
@@ -103,17 +109,19 @@
 
     <section class="contact section" id="contact">
       <div class="container">
-        <h2>Contact</h2>
-        <p>📍 Sinchu Sorry, Serrekunda, Gambie</p>
-        <p>📞 +220 222 9244</p>
-        <p>🕒 09:00 - 19:00</p>
+        <h2 data-i18n="contact.title">Contact</h2>
+        <p data-i18n="contact.addressValue">📍 Sinchu Sorry, Serrekunda, Gambie</p>
+  <p><span data-i18n="contact.phoneLabel">📞</span> <span data-i18n="contact.phoneValue">+220 222 9244</span></p>
+        <p data-i18n="contact.hoursValue">🕒 09:00 - 19:00</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Mariama Thiacry</p>
+    <p data-i18n="footer.text">© 2026 Mariama Thiacry</p>
   </footer>
-
+</body>
+  <script src="script.js"></script>
+</html>
 </body>
 </html>
