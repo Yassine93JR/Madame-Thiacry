@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mariama Thiacry - Produits laitiers artisanaux à Sinchu Sorry, Serrekunda, Gambie.">
+  <title>Mariama Thiacry | Produits Laitiers Artisanaux</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#accueil" class="brand">
+        <img src="logo.png" alt="Logo Mariama Thiacry" class="brand-logo">
+        <span>Mariama Thiacry</span>
+      </a>
+
+      <nav class="menu">
+        <a href="#accueil" data-i18n="nav.home">Accueil</a>
+        <a href="#apropos" data-i18n="nav.about">À propos</a>
+        <a href="#specialites" data-i18n="nav.specialties">Spécialités</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <button id="langToggle" class="lang-toggle" type="button" aria-label="Changer la langue">
+        EN
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="hero-kicker" data-i18n="hero.kicker">Produits laitiers artisanaux en Gambie</p>
+        <h1 data-i18n="hero.title">Le goût authentique du thiacry et du lait caillé fait maison</h1>
+        <p class="hero-text" data-i18n="hero.text">
+          Le meilleur du thiacry et du lait caillé fait maison par des mains d’or de Mariama. À votre service !
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+2202229244" data-i18n="hero.call">Appeler maintenant</a>
+          <a class="btn btn-secondary" href="#services" data-i18n="hero.discover">Découvrir nos services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="apropos">
+      <div class="container split">
+        <div class="about-image card">
+          <img src="2026-03-21.jpg" alt="Mariama Thiacry - Produits laitiers artisanaux">
+        </div>
+        <div class="about-content">
+          <h2 data-i18n="about.title">À propos de Mariama Thiacry</h2>
+          <p data-i18n="about.p1">
+            Mariama Thiacry est une entreprise familiale dédiée aux produits laitiers traditionnels, préparés chaque jour avec soin.
+          </p>
+          <p data-i18n="about.p2">
+            Notre passion : offrir des recettes authentiques, un goût naturel et une qualité artisanale qui rappelle les traditions gambiennes.
+          </p>
+          <ul class="about-points">
+            <li data-i18n="about.point1">Une fabrication 100% maison</li>
+            <li data-i18n="about.point2">Des recettes traditionnelles transmises avec amour</li>
+            <li data-i18n="about.point3">Un savoir-faire artisanal au service de vos événements</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="specialties section" id="specialites">
+      <div class="container">
+        <h2 data-i18n="specialties.title">Nos spécialités</h2>
+        <p class="section-intro" data-i18n="specialties.intro">
+          Une sélection maison préparée avec soin, dans le respect des saveurs traditionnelles et de la qualité artisanale.
+        </p>
+        <div class="specialties-grid">
+          <article class="specialty-card">
+            <div class="specialty-image">
+              <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=900&q=80" alt="Bol de lait caillé artisanal">
+            </div>
+            <h3 data-i18n="specialties.milk.title">Lait caillé traditionnel</h3>
+            <p data-i18n="specialties.milk.text">Une texture onctueuse et fraîche, préparée chaque jour dans notre atelier familial.</p>
+          </article>
+          <article class="specialty-card">
+            <div class="specialty-image">
+              <img src="https://images.unsplash.com/photo-1641829427009-8229f0c9afe6?auto=format&fit=crop&w=900&q=80" alt="Semoule fine pour préparation de thiacry">
+            </div>
+            <h3 data-i18n="specialties.thiacry.title">Thiacry à la semoule</h3>
+            <p data-i18n="specialties.thiacry.text">Le goût authentique du thiacry, équilibré entre semoule fine et lait de qualité.</p>
+          </article>
+          <article class="specialty-card">
+            <div class="specialty-image">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Petites douceurs maison">
+            </div>
+            <h3 data-i18n="specialties.cakes.title">Douceurs maison</h3>
+            <p data-i18n="specialties.cakes.text">De petites gourmandises artisanales pour accompagner vos événements et réceptions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="services section" id="services">
+      <div class="container">
+        <h2 data-i18n="services.title">Nos services</h2>
+        <p class="section-intro" data-i18n="services.intro">
+          Nous préparons des produits laitiers artisanaux pour tous vos moments importants, avec une approche simple, chaleureuse et personnalisée.
+        </p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3 data-i18n="services.weddings.title">Mariages</h3>
+            <p data-i18n="services.weddings.text">Des préparations soignées pour rendre vos célébrations encore plus mémorables.</p>
+          </article>
+          <article class="service-card">
+            <h3 data-i18n="services.baptisms.title">Baptêmes</h3>
+            <p data-i18n="services.baptisms.text">Un service familial et authentique, adapté à vos traditions et à vos envies.</p>
+          </article>
+          <article class="service-card">
+            <h3 data-i18n="services.events.title">Événements</h3>
+            <p data-i18n="services.events.text">Pour vos rencontres, fêtes et rassemblements, avec une touche artisanale unique.</p>
+          </article>
+          <article class="service-card">
+            <h3 data-i18n="services.custom.title">Commandes personnalisées</h3>
+            <p data-i18n="services.custom.text">Des commandes adaptées à vos besoins, préparées avec attention et qualité.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-wrap">
+        <div class="contact-info">
+          <h2 data-i18n="contact.title">Contact</h2>
+          <p><strong data-i18n="contact.companyLabel">Entreprise :</strong> <span data-i18n="contact.companyValue">Mariama Thiacry</span></p>
+          <p><strong data-i18n="contact.typeLabel">Type :</strong> <span data-i18n="contact.typeValue">Produits laitiers artisanaux</span></p>
+          <p><strong data-i18n="contact.addressLabel">Adresse :</strong> <span data-i18n="contact.addressValue">Sinchu Sorry, Serrekunda, Gambie</span></p>
+          <p><strong data-i18n="contact.phoneLabel">Téléphone :</strong> <a href="tel:+2202229244">+220 222 9244</a></p>
+          <p><strong data-i18n="contact.hoursLabel">Horaires :</strong> <span data-i18n="contact.hoursValue">Tous les jours de 09:00 à 19:00</span></p>
+          <a class="btn btn-primary contact-btn" href="tel:+2202229244" data-i18n="contact.cta">Commander / Appeler</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footer.text">Mariama Thiacry - Authenticité, qualité artisanale et chaleur humaine.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
