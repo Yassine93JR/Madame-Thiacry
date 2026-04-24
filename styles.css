@@ -310,6 +310,75 @@ a {
   color: var(--brown-500);
 }
 
+/* New visual upgrades for cards and captions */
+.specialty-card,
+.service-card {
+  text-align: center;
+  padding: 1rem 1.2rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.specialty-image,
+.service-image {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(40, 19, 8, 0.12);
+  margin-bottom: 0.9rem;
+}
+
+.specialty-image img,
+.service-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.caption {
+  margin-top: 0.45rem;
+  font-size: 0.95rem;
+  color: var(--brown-500);
+}
+
+/* Services cards visual style */
+.service-card h3 {
+  color: var(--orange-700);
+  margin: 0.6rem 0 0.4rem;
+}
+
+.service-card p {
+  color: var(--brown-500);
+  max-width: 380px;
+}
+
+/* Make the services grid a bit larger and centered */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (max-width: 980px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .specialty-image img,
+  .service-image img {
+    height: 180px;
+  }
+}
+
 .services {
   background:
     linear-gradient(rgba(249, 237, 216, 0.76), rgba(249, 237, 216, 0.76)),
